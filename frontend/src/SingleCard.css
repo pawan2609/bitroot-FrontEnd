@@ -1,0 +1,144 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.card{
+  position: relative;
+  border-radius: 4px;
+  transition: 0.3s;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10%;
+
+  
+}
+.Modal{
+  position: fixed;
+  width: 60%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  border-radius: 4px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  overflow-x: scroll;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.inner{
+ 
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  background-color: #ffffff;
+  color: rgb(9, 9, 9);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.hide{
+  display:none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.image:hover .hide{
+  display: block;
+  cursor: pointer;
+  color: red;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img{
+  border-radius: 4px;
+  position: relative;
+  
+}
+
+
+.footer{
+  display: flex;
+}
+.Modal img {
+  width: 100%;
+}
+
+.close{
+  margin-left: 90%;
+}
+
+.close:hover{
+ 
+  cursor: pointer;
+
+}
+.foot{
+  display: flex;
+    padding-left: 2%;
+}
+.foot {
+  display: flex;
+  padding-left: 2%;
+  align-items: center; /* Align items vertically */
+}
+
+.foot img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add space between the image and name */
+}
+
+.foot p {
+  margin: 0; /* Remove default margin for <p> elements */
+}
+
+
